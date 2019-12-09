@@ -1,0 +1,92 @@
+.App {
+  width: 600px;
+  margin: 0 auto;
+  color: #61DAFB;
+}
+
+.addItemInput {
+  width: 400px;
+  padding: 10px;
+  border: 1px solid #FFF;
+  font-size: 16px;
+}
+
+.addItemBtn {
+  padding: 10px;
+  background-color: #61DAFB;
+  border: 1px solid #61DAFB;
+  color: #FFF;
+  outline: none;
+  font-size: 16px;
+}
+
+.addItemBtn:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.todo-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.todo-item {
+  padding: 10px;
+  margin-bottom: -1px;
+  background-color: #FFF;
+  border: 1px solid #DDD;
+  line-height: 20px;
+}
+
+.todo-item:hover {
+  background-color: #F5F5F5;
+}
+
+.check-icon {
+  display: inline-block;
+  position: relative;
+  width: 20px;
+  height: 20px;   
+}
+ 
+.check-icon::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 6px;
+  height: 12px;
+  border-style: solid;
+  border-color: #61DAFB;
+  border-width: 0 3px 3px 0;
+  transform: rotateZ(45deg);
+}
+
+.check-icon:hover {
+  cursor: pointer;
+}
+
+.item-done {
+  color: red;
+  text-decoration: line-through;
+}
+
+.item-done .check-icon::after {
+  border-color: red;
+}
+
+.btn-close {
+  padding: 0;
+  background: none;
+  border: 0;
+  float: right;
+  font-size: 16px;
+  font-weight: 700;
+  color: #817E7E;
+  outline: none;
+  height: 26px;
+}
+
+.btn-close:hover {
+  color: #000;
+}
